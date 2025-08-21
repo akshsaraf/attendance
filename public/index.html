@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Attendance</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Attendance Marking</h1>
+  <form id="attendance-form">
+    <label>Name:
+      <input type="text" id="name" required>
+    </label>
+    <label>Class:
+      <input type="text" id="class" required>
+    </label>
+    <label>Email:
+      <input type="email" id="email" required>
+    </label>
+    <label>Status:
+      <select id="status">
+        <option value="Present">Present</option>
+      </select>
+    </label>
+    <label>House:
+      <input type="text" id="house" required>
+    </label>    
+    <button type="submit">Submit</button>
+  </form>
+
+  <p><a href="admin.html">Admin Panel</a></p>
+
+  <script>
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

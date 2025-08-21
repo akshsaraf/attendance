@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Admin Login</h1>
+  <div id="login-section">
+    <input type="password" id="admin-password" placeholder="Enter password">
+    <button onclick="adminLogin()">Login</button>
+  </div>
+
+  <div id="admin-panel" style="display:none;">
+    <h2>Present Students</h2>
+    <ul id="present-list"></ul>
+
+    <h2>Absent Students</h2>
+    <ul id="absent-list"></ul>
+
+    <button onclick="clearAttendance()">Clear Attendance</button>
+    <button onclick="downloadExcel()">Download Excel</button>
+  </div>
+
+  <script>
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

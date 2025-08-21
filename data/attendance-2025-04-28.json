@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Alice",
+    "className": "1",
+    "email": "aksh@alice.com",
+    "status": "Present",
+    "time": "4:25:33 PM"
+  },
+  {
+    "name": "Bob",
+    "className": "1",
+    "email": "Akshsaraf007@gmail.com",
+    "status": "Present",
+    "time": "4:25:51 PM"
+  },
+  {
+    "name": "Charlie",
+    "className": "12",
+    "email": "Akshsaraf007@gmail.com",
+    "status": "Present",
+    "time": "4:30:58 PM"
+  }
+]
